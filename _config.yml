@@ -1,0 +1,83 @@
+# Site settings
+title: "Alexey Gulev"
+description: "GameDevLog - Game Development Blog"
+url: "https://agulev.com"
+baseurl: ""
+permalink: ':title/'
+# Author Settings
+author: "Alexey Gulev"
+author-img: "agulev.jpg" # add your photo
+about-author: "<a href='https://defold.com'>Defold Engine</a> developer<br><a href='https://refold.io'>Refold.io</a> co-owner<br><a href='https://potatojam.com'>PotatoJam.com</a> co-founder"
+social-twitter: "@AGulev"# add your Twitter handle
+social-github: "AGulev"
+social-linkedin: "agulev"
+social-email: "me@agulev.com"
+social-telegram: "AGulev"
+social-mastodon: "https://mastodon.gamedev.place/@agulev"
+social-bluesky: "https://bsky.app/profile/agulev.com"
+
+# Disqus
+discus-identifier: # add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+  - jemoji
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "AGulev"
+
+# Exclude files from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - temp-flexible-theme/
+  - backup-theme/
+
+# Include html folder for static file serving
+include:
+  - html
+
+# Pagination (v2 format)
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ':title - Page :num'
+  limit: 0
+  locale: ''
+  indexpage: 'index'
+  sort_field: 'date'
+  sort_reverse: true
+
+# AutoPages configuration for automatic language pages
+autopages:
+  enabled: true
+  locales:
+    layouts: ["autopage_locale.html"]
+    title: "Posts in :locale"
+    permalink: "/:locale/"
+    per_page: 5

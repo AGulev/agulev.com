@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ page.date | date: "%B %d, %Y" }}
+            </time>
+            {% if page.last_update %}
+                <br><small>Last updated: {{ page.last_update | date: "%B %d, %Y" }}</small>
+            {% endif %}
+            {% if page.author %}
+                • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name">{{ page.author }}</span>
+                </span>
+            {% endif %}
+            {% if page.categories.size > 0 %}
+                • Categories: 
+                {% for category in page.categories %}
+                    <span class="category">{{ category }}</span>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+            {% endif %}
+        </p>
+    </header>
+
+    {% comment %} Language switcher logic {% endcomment %}
+    {% assign current_url = page.url %}
+    {% assign is_english = false %}
+    {% if current_url contains '/en/' %}
+        {% assign is_english = true %}
+        {% assign russian_url = current_url | replace: '/en/', '/' %}
+    {% else %}
+        {% assign english_url = '/en' | append: current_url %}
+    {% endif %}
+
+    {% if is_english %}
+        {% assign russian_exists = false %}
+        {% for post in site.posts %}
+            {% if post.url == russian_url %}
+                {% assign russian_exists = true %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        {% if russian_exists %}
+        <div class="language-switcher">
+            <p style="text-align: right;"><em>Эта публикация также доступна на <a href="{{ russian_url }}">русском</a>.</em></p>
+        </div>
+        {% endif %}
+    {% else %}
+        {% assign english_exists = false %}
+        {% for post in site.posts %}
+            {% if post.url == english_url %}
+                {% assign english_exists = true %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        {% if english_exists %}
+        <div class="language-switcher">
+            <p style="text-align: right;"><em>This post is also available in <a href="{{ english_url }}">English</a>.</em></p>
+        </div>
+        {% endif %}
+    {% endif %}
+
+    <div class="post-content" itemprop="articleBody">
+        {{ content }}
+    </div>
+
+    {% if page.tags.size > 0 %}
+    <div class="post-tags">
+        <strong>Tags:</strong>
+        {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</article>

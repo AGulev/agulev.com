@@ -1,0 +1,23 @@
+---
+layout: main
+title: "Russian Posts"
+pagination:
+  enabled: true
+  locale: ru
+  permalink: '/page/:num/'
+  title: 'Russian Posts - Page :num'
+  indexpage: 'index'
+---
+
+{% include pagination.html %}
+
+{% for post in paginator.posts %}
+<article class="post" data-language="ru">
+  {% include post-thumbnail.html %}
+  {% include post-content.html %}
+</article>
+{% endfor %}
+
+<div class="no-posts-found" style="display: none;">
+  <p>No posts found for the selected language.</p>
+</div> 

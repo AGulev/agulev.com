@@ -1,0 +1,74 @@
+{% assign current_locale = page.locale | default: "all" %}
+<div class="language-nav">
+    <div class="language-nav-inner">
+        <a href="{{ '/' | relative_url }}" class="nav-link {% if current_locale == 'all' %}active{% endif %}">
+            <span class="flag">🏠</span>
+            <span class="lang-name">All</span>
+        </a>
+        <a href="{{ '/ru/' | relative_url }}" class="nav-link {% if current_locale == 'ru' %}active{% endif %}">
+            <span class="flag">🇷🇺</span>
+            <span class="lang-name">Russian</span>
+        </a>
+        <a href="{{ '/en/' | relative_url }}" class="nav-link {% if current_locale == 'en' %}active{% endif %}">
+            <span class="flag">🇺🇸</span>
+            <span class="lang-name">English</span>
+        </a>
+    </div>
+</div>
+
+<style>
+.language-nav {
+    margin: 20px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.language-nav-inner {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.nav-link:hover {
+    background: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.nav-link .flag {
+    font-size: 1.2em;
+}
+
+.nav-link .lang-name {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    .language-nav-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-link {
+        justify-content: center;
+    }
+}
+</style> 

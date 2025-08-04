@@ -1,0 +1,57 @@
+<nav class="pagination" role="pagination">
+  <div class="pagination-row">
+    <div class="pagination-left">
+      <div class="language-switcher">
+        <button class="lang-btn" data-lang="all">All</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    
+    <div class="pagination-center">
+      {% assign current_path = page.url %}
+      {% assign locale = '' %}
+      {% if current_path contains '/ru/' %}
+        {% assign locale = 'ru' %}
+      {% elsif current_path contains '/en/' %}
+        {% assign locale = 'en' %}
+      {% endif %}
+      
+      <span class="pagination-arrow-placeholder">
+        {% if paginator.previous_page %}
+          {% if paginator.previous_page == 1 %}
+            {% if locale != '' %}
+              <a class="newer-posts" href="{{ site.baseurl }}/{{ locale }}/">←</a>
+            {% else %}
+              <a class="newer-posts" href="{{ site.baseurl }}/">←</a>
+            {% endif %}
+          {% else %}
+            {% if locale != '' %}
+              <a class="newer-posts" href="{{ site.baseurl }}/{{ locale }}/page/{{ paginator.previous_page }}/">←</a>
+            {% else %}
+              <a class="newer-posts" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/">←</a>
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      </span>
+
+      {% if paginator.total_pages > 1 %}
+      <span class="page-number">{{paginator.page}}/{{paginator.total_pages}}</span>
+      {% endif %}
+      
+      <span class="pagination-arrow-placeholder">
+        {% if paginator.next_page %}
+          {% if locale != '' %}
+            <a class="older-posts" href="{{ site.baseurl }}/{{ locale }}/page/{{ paginator.next_page }}/">→</a>
+          {% else %}
+            <a class="older-posts" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/">→</a>
+          {% endif %}
+        {% endif %}
+      </span>
+    </div>
+    
+    <div class="pagination-right">
+      <a class="all-posts" href="{{ site.baseurl }}/archive/">Archive</a>
+    </div>
+  </div>
+</nav>

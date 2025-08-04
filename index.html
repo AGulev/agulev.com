@@ -1,0 +1,21 @@
+---
+layout: main
+title: "All Posts"
+pagination:
+  enabled: true
+  permalink: '/page/:num/'
+  title: 'All Posts - Page :num'
+---
+
+{% include pagination.html %}
+
+{% for post in paginator.posts %}
+<article class="post" data-language="{% if post.locale %}{{ post.locale }}{% else %}ru{% endif %}">
+  {% include post-thumbnail.html %}
+  {% include post-content.html %}
+</article>
+{% endfor %}
+
+<div class="no-posts-found" style="display: none;">
+  <p>No posts found for the selected language.</p>
+</div>

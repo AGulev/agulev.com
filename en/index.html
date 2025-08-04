@@ -1,0 +1,23 @@
+---
+layout: main
+title: "English Posts"
+pagination:
+  enabled: true
+  locale: en
+  permalink: '/en/page/:num/'
+  title: 'English Posts - Page :num'
+  indexpage: 'index'
+---
+
+{% include pagination.html %}
+
+{% for post in paginator.posts %}
+<article class="post" data-language="en">
+  {% include post-thumbnail.html %}
+  {% include post-content.html %}
+</article>
+{% endfor %}
+
+<div class="no-posts-found" style="display: none;">
+  <p>No posts found for the selected language.</p>
+</div> 

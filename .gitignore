@@ -1,0 +1,29 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby
+Gemfile.lock
+vendor/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary files
+*~
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+/package.json
+/package-lock.json
