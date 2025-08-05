@@ -69,36 +69,45 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = newUrl;
     }
     
-    // Auto-navigate based on browser language (only on first visit)
-    function autoNavigateIfNeeded() {
-        const path = window.location.pathname;
-        const savedLang = localStorage.getItem('selectedLanguage');
+    // Show/hide posts based on selected language
+    function filterPostsByLanguage(lang) {
+        const posts = document.querySelectorAll('.post');
+        const noPostsMessage = document.querySelector('.no-posts-found');
         
-        // Only auto-navigate if:
-        // 1. We're on the main page
-        // 2. No language preference is saved OR saved language is invalid
-        // 3. User hasn't explicitly chosen a language
-        if (path === '/' && (!savedLang || !['ru', 'en', 'all'].includes(savedLang))) {
-            const detectedLang = detectBrowserLanguage();
-            localStorage.setItem('selectedLanguage', detectedLang);
+        let visibleCount = 0;
+        
+        posts.forEach(post => {
+            const postLanguage = post.dataset.language;
             
-            // Navigate to the detected language page
-            navigateToLanguage(detectedLang);
-            return true; // Indicate that we navigated
-        }
+            if (lang === 'all' || postLanguage === lang) {
+                post.style.display = 'block';
+                visibleCount++;
+            } else {
+                post.style.display = 'none';
+            }
+        });
         
-        return false; // No navigation occurred
+        // Show/hide "no posts" message
+        if (noPostsMessage) {
+            if (visibleCount === 0) {
+                noPostsMessage.style.display = 'block';
+            } else {
+                noPostsMessage.style.display = 'none';
+            }
+        }
     }
     
     // Initialize language switcher
     function initLanguageSwitcher() {
-        // Try auto-navigation first
-        if (autoNavigateIfNeeded()) {
-            return; // Don't continue if we navigated
-        }
-        
         const currentLang = getCurrentLanguage();
         setActiveButton(currentLang);
+        
+        // If we're on the main page, filter posts by the current language selection
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+            const savedLang = localStorage.getItem('selectedLanguage') || 'all';
+            setActiveButton(savedLang);
+            filterPostsByLanguage(savedLang);
+        }
         
         // Add click event listeners
         langButtons.forEach(btn => {
@@ -108,8 +117,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Save to localStorage
                 localStorage.setItem('selectedLanguage', selectedLang);
                 
-                // Navigate to appropriate page
-                navigateToLanguage(selectedLang);
+                // If we're on the main page, just filter posts
+                if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+                    setActiveButton(selectedLang);
+                    filterPostsByLanguage(selectedLang);
+                } else {
+                    // Navigate to appropriate page
+                    navigateToLanguage(selectedLang);
+                }
             });
         });
     }
