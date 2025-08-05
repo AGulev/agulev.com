@@ -3,8 +3,8 @@ source "https://rubygems.org"
 # GitHub Pages gem
 gem "github-pages", group: :jekyll_plugins
 
-# Pagination plugin (using v2 for newer Jekyll compatibility)
-gem "jekyll-paginate-v2", group: :jekyll_plugins
+# Pagination plugin (using standard jekyll-paginate for GitHub Pages compatibility)
+gem "jekyll-paginate", group: :jekyll_plugins
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
