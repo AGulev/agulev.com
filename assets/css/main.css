@@ -1767,8 +1767,9 @@ a.all-posts:hover {
     font-size: 21px;
   }
   
-  /* On mobile, don't float images to avoid cramped layout */
-  img {
+  /* On mobile, don't float images to avoid cramped layout (only in post/article content) */
+  .article-page img,
+  .post .post-content img {
     float: none;
     margin: 1em auto;
     display: block;

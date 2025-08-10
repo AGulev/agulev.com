@@ -90,4 +90,12 @@
       }
     }
   }
+  /* On mobile, limit image resets to post/article content only */
+  .article-page img,
+  .post .post-content img {
+    float: none;
+    margin: 1em auto;
+    display: block;
+    max-width: 100%;
+  }
 }
