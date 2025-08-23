@@ -16,8 +16,20 @@ social-telegram: "GameDevLogs"
 social-mastodon: "https://mastodon.gamedev.place/@agulev"
 social-bluesky: "https://bsky.app/profile/agulev.com"
 
-# Disqus
-discus-identifier: # add your discus identifier
+# Giscus Comments (GitHub Discussions)
+giscus:
+  enabled: true
+  repo: "AGulev/agulev.com"
+  repo_id: "R_kgDOPXaXFw"
+  category: "General"
+  category_id: "DIC_kwDOPXaXF84CugwV"
+  mapping: "pathname"
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "bottom"
+  theme: "preferred_color_scheme"
+  lang: "en"
 
 # Tracker
 analytics: # Google Analytics
