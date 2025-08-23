@@ -1,20 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const langButtons = document.querySelectorAll('.lang-btn');
-    
+// Language detection utility - available globally
+window.LanguageUtils = {
     // Detect browser language and return appropriate language preference
-    function detectBrowserLanguage() {
-        // Get browser language preferences
+    detectBrowserLanguage: function() {
         const browserLanguages = navigator.languages || [navigator.language] || ['en'];
-        
-        // Check if Russian is in the language list
         const hasRussian = browserLanguages.some(lang => 
             lang.toLowerCase().startsWith('ru') || 
             lang.toLowerCase().startsWith('ru-')
         );
-        
-        // If Russian is detected, prefer Russian, otherwise use English
         return hasRussian ? 'ru' : 'en';
+    },
+    
+    // Get saved language or detect from browser
+    getInitialLanguage: function() {
+        let savedLang = localStorage.getItem('selectedLanguage');
+        if (!savedLang || !['ru', 'en', 'all'].includes(savedLang)) {
+            savedLang = this.detectBrowserLanguage();
+            localStorage.setItem('selectedLanguage', savedLang);
+        }
+        return savedLang;
+    },
+    
+    // Save language preference
+    saveLanguage: function(lang) {
+        localStorage.setItem('selectedLanguage', lang);
     }
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    const langButtons = document.querySelectorAll('.lang-btn');
     
     // Get current language from URL path
     function getCurrentLanguage() {
@@ -79,8 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // 2. No language preference is saved OR saved language is invalid
         // 3. User hasn't explicitly chosen a language
         if (path === '/' && (!savedLang || !['ru', 'en', 'all'].includes(savedLang))) {
-            const detectedLang = detectBrowserLanguage();
-            localStorage.setItem('selectedLanguage', detectedLang);
+            const detectedLang = LanguageUtils.detectBrowserLanguage();
+            LanguageUtils.saveLanguage(detectedLang);
             
             // Navigate to the detected language page
             navigateToLanguage(detectedLang);
@@ -92,12 +105,27 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize language switcher
     function initLanguageSwitcher() {
+        const path = window.location.pathname;
+        
+        // Skip language switcher functionality for archive and tags pages
+        if (path === '/archive/' || path === '/tags/') {
+            return;
+        }
+        
         // Try auto-navigation first
         if (autoNavigateIfNeeded()) {
             return; // Don't continue if we navigated
         }
         
         const currentLang = getCurrentLanguage();
+        const savedLang = localStorage.getItem('selectedLanguage');
+        
+        // If on main page and have saved preference, navigate to that language
+        if (path === '/' && savedLang && savedLang !== 'all' && savedLang !== currentLang) {
+            navigateToLanguage(savedLang);
+            return;
+        }
+        
         setActiveButton(currentLang);
         
         // Add click event listeners
@@ -106,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const selectedLang = this.dataset.lang;
                 
                 // Save to localStorage
-                localStorage.setItem('selectedLanguage', selectedLang);
+                LanguageUtils.saveLanguage(selectedLang);
                 
                 // Navigate to appropriate page
                 navigateToLanguage(selectedLang);

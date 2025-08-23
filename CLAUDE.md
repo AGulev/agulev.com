@@ -49,6 +49,9 @@ The site automatically deploys to GitHub Pages via GitHub Actions when pushing t
 
 ### Special Features
 - **Bilingual support**: Separate /en/ and /ru/ directories for language-specific content
+  - Language switcher with browser detection (Russian speakers get RU by default, others get EN)
+  - Language preference persists across all pages using localStorage
+  - Archive and Tags pages include language filtering with adaptive layouts
 - **html/ directory**: Static HTML demos and games (Defold HTML5 builds)
 - **Pagination**: Uses jekyll-paginate plugin with 5 posts per page
 - **Comments**: Giscus integration using GitHub Discussions for blog post comments

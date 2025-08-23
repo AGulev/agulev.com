@@ -4,16 +4,34 @@ title: "Tags"
 permalink: /tags/
 ---
 
+<nav class="pagination" role="pagination">
+  <div class="pagination-row">
+    <div class="pagination-left">
+      <div class="language-switcher">
+        <button class="lang-btn" data-lang="all">All</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <div class="pagination-center"></div>
+    <div class="pagination-right">
+      <a class="all-posts" href="{{ site.baseurl }}/archive/">Archive</a>
+      <span style="margin: 0 10px;">|</span>
+      <a class="all-posts" href="{{ site.baseurl }}/tags/">Tags</a>
+    </div>
+  </div>
+</nav>
+
 <div class="blog-tags">
   <h1>All Tags</h1>
   
   {% assign tags = site.tags | sort %}
   {% for tag in tags %}
-    <div id="{{ tag[0] }}">
-      <h2>{{ tag[0] }} ({{ tag[1].size }} posts)</h2>
+    <div id="{{ tag[0] }}" class="tag-section">
+      <h2>{{ tag[0] }} (<span class="post-count">{{ tag[1].size }}</span> posts)</h2>
       <ul class="tag-list">
         {% for post in tag[1] %}
-          <li>
+          <li data-lang="{% if post.locale %}{{ post.locale }}{% else %}ru{% endif %}">
             <span>
               <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
               <small>{{ post.date | date: "%Y-%m-%d" }}</small>
@@ -23,4 +41,69 @@ permalink: /tags/
       </ul>
     </div>
   {% endfor %}
-</div> 
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const tagSections = document.querySelectorAll('.tag-section');
+    
+    // Set active button
+    function setActiveButton(lang) {
+        langButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.dataset.lang === lang) {
+                btn.classList.add('active');
+            }
+        });
+    }
+    
+    // Filter posts and update counts
+    function filterTags(lang) {
+        tagSections.forEach(section => {
+            const posts = section.querySelectorAll('li');
+            const postCount = section.querySelector('.post-count');
+            let visibleCount = 0;
+            
+            posts.forEach(post => {
+                const postLang = post.dataset.lang;
+                
+                if (lang === 'all' || postLang === lang) {
+                    post.style.display = '';
+                    visibleCount++;
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+            
+            // Update post count
+            postCount.textContent = visibleCount;
+            
+            // Hide entire section if no posts are visible
+            if (visibleCount === 0) {
+                section.style.display = 'none';
+            } else {
+                section.style.display = '';
+            }
+        });
+    }
+    
+    // Initialize with saved language preference or browser detection
+    const savedLang = window.LanguageUtils.getInitialLanguage();
+    setActiveButton(savedLang);
+    filterTags(savedLang);
+    
+    // Add click event listeners
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const selectedLang = this.dataset.lang;
+            
+            // Save to localStorage
+            window.LanguageUtils.saveLanguage(selectedLang);
+            
+            setActiveButton(selectedLang);
+            filterTags(selectedLang);
+        });
+    });
+});
+</script>

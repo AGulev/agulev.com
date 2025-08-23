@@ -4,6 +4,24 @@ title: "Archive"
 permalink: /archive/
 ---
 
+<nav class="pagination" role="pagination">
+  <div class="pagination-row">
+    <div class="pagination-left">
+      <div class="language-switcher">
+        <button class="lang-btn" data-lang="all">All</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <div class="pagination-center"></div>
+    <div class="pagination-right">
+      <a class="all-posts" href="{{ site.baseurl }}/archive/">Archive</a>
+      <span style="margin: 0 10px;">|</span>
+      <a class="all-posts" href="{{ site.baseurl }}/tags/">Tags</a>
+    </div>
+  </div>
+</nav>
+
 <div class="archive-wrapper">
     <div class="archive">
         <div class="archive-header">
@@ -26,7 +44,7 @@ permalink: /archive/
                 {% endif %}
             {% endfor %}
             
-            <div class="archive-row">
+            <div class="archive-row" data-lang="{% if ru_post and en_post %}both{% elsif ru_post %}ru{% elsif en_post %}en{% endif %}">
                 <div class="archive-col-date">
                     <div class="archive-date">
                         {{ group.name | date: "%Y, %b %d" }}
@@ -86,8 +104,7 @@ permalink: /archive/
 
 <style>
 .archive-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     gap: 20px;
     padding: 15px 0;
     border-bottom: 2px solid #eee;
@@ -96,13 +113,41 @@ permalink: /archive/
     margin-bottom: 20px;
 }
 
+.archive-col-date { flex: 1; }
+.archive-col-ru { flex: 1; }
+.archive-col-en { flex: 1; }
+
 .archive-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     gap: 20px;
     padding: 15px 0;
     border-bottom: 1px solid #f5f5f5;
     align-items: start;
+}
+
+/* Filter states - two column layout (date + language) */
+.archive.filter-ru .archive-col-en {
+    display: none;
+}
+
+.archive.filter-ru .archive-col-date {
+    flex: 1; /* Date column takes 1/2 width */
+}
+
+.archive.filter-ru .archive-col-ru {
+    flex: 1; /* Russian column takes 1/2 width */
+}
+
+.archive.filter-en .archive-col-ru {
+    display: none;
+}
+
+.archive.filter-en .archive-col-date {
+    flex: 1; /* Date column takes 1/2 width */
+}
+
+.archive.filter-en .archive-col-en {
+    flex: 1; /* English column takes 1/2 width */
 }
 
 .archive-row:hover {
@@ -167,8 +212,12 @@ permalink: /archive/
 
 @media only screen and (max-width: 768px) {
     .archive-header,
-    .archive-row {
-        grid-template-columns: 1fr;
+    .archive-row,
+    .archive.filter-ru .archive-header,
+    .archive.filter-ru .archive-row,
+    .archive.filter-en .archive-header,
+    .archive.filter-en .archive-row {
+        flex-direction: column;
         gap: 10px;
     }
     
@@ -207,3 +256,66 @@ permalink: /archive/
     }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const archiveRows = document.querySelectorAll('.archive-row');
+    
+    // Set active button
+    function setActiveButton(lang) {
+        langButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.dataset.lang === lang) {
+                btn.classList.add('active');
+            }
+        });
+    }
+    
+    // Filter archive rows based on selected language
+    function filterArchive(lang) {
+        const archive = document.querySelector('.archive');
+        
+        // Remove all filter classes first
+        archive.classList.remove('filter-ru', 'filter-en');
+        
+        // Apply appropriate filter class
+        if (lang === 'ru') {
+            archive.classList.add('filter-ru');
+        } else if (lang === 'en') {
+            archive.classList.add('filter-en');
+        }
+        
+        // Filter rows
+        archiveRows.forEach(row => {
+            const rowLang = row.dataset.lang;
+            
+            if (lang === 'all') {
+                row.style.display = '';
+            } else if (lang === 'ru') {
+                row.style.display = (rowLang === 'ru' || rowLang === 'both') ? '' : 'none';
+            } else if (lang === 'en') {
+                row.style.display = (rowLang === 'en' || rowLang === 'both') ? '' : 'none';
+            }
+        });
+    }
+    
+    // Initialize with saved language preference or browser detection
+    const savedLang = window.LanguageUtils.getInitialLanguage();
+    setActiveButton(savedLang);
+    filterArchive(savedLang);
+    
+    // Add click event listeners
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const selectedLang = this.dataset.lang;
+            
+            // Save to localStorage
+            window.LanguageUtils.saveLanguage(selectedLang);
+            
+            setActiveButton(selectedLang);
+            filterArchive(selectedLang);
+        });
+    });
+});
+</script>
