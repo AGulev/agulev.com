@@ -36,7 +36,7 @@ The engine uses LuaJIT and Lua 5.1 where LuaJIT isn't supported. LuaJIT is based
 A few links about Lua I would recommend for all beginners:
 
 - [https://tylerneylon.com/a/learn-lua/](https://tylerneylon.com/a/learn-lua/) — Learn Lua in 15 minutes. For people who have never used Lua before, it is especially helpful to keep this page open and check it out if you forget something.
-- [https://writeabout.tech/programming/lua-in-60-minutes/](https://writeabout.tech/programming/lua-in-60-minutes/) — Lua in 60 minutes
+- [Lua in 60 minutes](https://web.archive.org/web/20221006050139/https://writeabout.tech/programming/lua-in-60-minutes/)
 - [https://defold.com/manuals/lua/](https://defold.com/manuals/lua/) — Lua in Defold. Official manual.
 - [https://github.com/Olivine-Labs/lua-style-guide](https://github.com/Olivine-Labs/lua-style-guide) — a code style for Lua.
 - [https://gist.github.com/dapetcu21/c6917b8cf2a4a2bc22a6cc46a7d1f80d](https://gist.github.com/dapetcu21/c6917b8cf2a4a2bc22a6cc46a7d1f80d) — a one more сode style changed specially for Defold.

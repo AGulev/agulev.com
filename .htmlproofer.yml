@@ -43,6 +43,8 @@ ignore_urls:
   - https://www.linkedin.com/.*
   - https://linkedin.com/.*
   - https://in.linkedin.com/.*
+  - https://www.reddit.com/.*
+  - https://reddit.com/.*
 
 # Ignore common non-200 statuses that often block bots
 http_status_ignore:
