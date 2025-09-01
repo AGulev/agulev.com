@@ -51,9 +51,9 @@ image: '/wp-content/uploads/2016/08/facebook-share-1024x538.jpg'
 
 И это не пустое слово. Если вы написали сохранение в файл, то не важно собирается ли html5, ios или linux билд, все просто сохраняется и загружается. Это справедливо и для всех интегрированных библиотек:
 
-- Facebook интегрируется один раз и работает на iOS, Android, HTML5 ([ссылка на мануал](http://www.defold.com/manuals/facebook/));
-- In-app purchases — интегрируются один раз и работают на iOS, Android, HTML5 (Facebook canvas) и Amazon ([ссылка на мануал](http://www.defold.com/manuals/iap/))
-- Push Notification интегрируются один раз и работают на iOS, Android ([ссылка на мануал](http://www.defold.com/manuals/push/)).
+- Facebook интегрируется один раз и работает на iOS, Android, HTML5 ([ссылка на мануал](https://www.defold.com/manuals/facebook/));
+- In-app purchases — интегрируются один раз и работают на iOS, Android, HTML5 (Facebook canvas) и Amazon ([ссылка на мануал](https://www.defold.com/manuals/iap/))
+- Push Notification интегрируются один раз и работают на iOS, Android ([ссылка на мануал](https://www.defold.com/manuals/push/)).
 
 У всех библиотек общий API не зависимо от платформы, поэтому один раз написаный код просто работает везде.
 

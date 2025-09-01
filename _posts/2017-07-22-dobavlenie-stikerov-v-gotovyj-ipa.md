@@ -119,7 +119,7 @@ zip -qr "Game_with_stickers.ipa" *
 
 Когда я загружал ipa, моей радости не было придела. Но через 5 минут процессинга приложения уже в самом сторе я получил письмо из App Store со следующей ошибкой:
 
-> **Invalid iMessage App** — Your iMessage app contains an invalid sticker pack. The app may have been built or signed with non-compliant or prerelease tools. For more information, go to [developer.apple.com](http://developer.apple.com/).
+> **Invalid iMessage App** — Your iMessage app contains an invalid sticker pack. The app may have been built or signed with non-compliant or prerelease tools. For more information, go to [developer.apple.com](https://developer.apple.com/).
 
 > *Я даже не хочу озвучивать количество ipa, которые я собрал и загрузил в стор в попытках разобраться с этой ошибкой.*
 
@@ -131,7 +131,7 @@ zip -qr "Game_with_stickers.ipa" *
 
 Для решения этой проблемы нужно вернуться на этап сборки исходного ipa с нашей игрой и внести правки в info.plist нашего приложения(не стикеров, а именно игры). В Defold можно задать шаблон info.plist в настройках проекта (как это делается в AIR я уже и не помню).
 
-> *Для Defold. Если шаблона у вас нет, то взять его можно, скачав последнюю версию bob.jar, на сайте [d.defold.com](http://d.defold.com). После этого переименовать bob.jar в bob.zip, распаковать и пройти в com/dynamo/bob/bundle/resources/ — там есть шаблоны для всех платформ: AndroidManifest, info.plist и др.*
+> *Для Defold. Если шаблона у вас нет, то взять его можно, скачав последнюю версию bob.jar, на сайте [d.defold.com](https://d.defold.com). После этого переименовать bob.jar в bob.zip, распаковать и пройти в com/dynamo/bob/bundle/resources/ — там есть шаблоны для всех платформ: AndroidManifest, info.plist и др.*
 
 > *Кроме того, изменения в plist можно внести и уже в собранный ipa перед подписанием (команда `codesign -f -s "YOUR_CERTIFICATE" --entitlements Entitlements.plist`).*
 

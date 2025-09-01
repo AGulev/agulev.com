@@ -61,7 +61,7 @@ image: '/wp-content/uploads/2015/11/abfef193e4924eda800a520d470d9e58-300x171.png
 
 **upd: Спасибо [@andrew](https://twitter.com/and_r3w), для сборки openfl добавил флаг** *<haxeflag name="-dce full" />* **билд стал еще меньше. Но с использованием этого параметра нужно быть осторожным т.к. компилятор может вырезать что-то важное. Так что внимательно тестируйте ваше приложение.**
 
-**upd2: Спасибо, [Sergey Batishchev](https://disqus.com/by/sergeybatishchev/) указал на мою оплошность. Я пересобрал билд unity для android только armv7 и установил максимальный Stripping level. А по совету [Кирилла Федорчука](http://agulev.com/kogda-razmer-ipa-i-apk-imeet-znachenie/#comment-2382808557) указал размер распакованных бинарей (т.к. hello world почти без ресурсов, это примерно даст понять какой будет конечный размер приложения в апсторе с некоторой погрешностью)**
+**upd2: Спасибо, [Sergey Batishchev](https://disqus.com/by/sergeybatishchev/) указал на мою оплошность. Я пересобрал билд unity для android только armv7 и установил максимальный Stripping level. А по совету [Кирилла Федорчука](https://agulev.com/kogda-razmer-ipa-i-apk-imeet-znachenie/#comment-2382808557) указал размер распакованных бинарей (т.к. hello world почти без ресурсов, это примерно даст понять какой будет конечный размер приложения в апсторе с некоторой погрешностью)**
 
 
 

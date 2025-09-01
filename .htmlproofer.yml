@@ -17,6 +17,10 @@ url_ignore:
   - https://www.facebook.com/.*
   - https://t.me/.*
   - https://gist.github.com/.*
+  # LinkedIn aggressively blocks bots (returns 999), ignore to avoid CI flakiness
+  - https://www.linkedin.com/.*
+  - https://linkedin.com/.*
+  - https://in.linkedin.com/.*
 
 # Ignore common non-200 statuses that often block bots
 http_status_ignore:

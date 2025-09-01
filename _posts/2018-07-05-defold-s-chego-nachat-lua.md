@@ -36,14 +36,14 @@ image: '/wp-content/uploads/2021/08/dl-1-1024x411-2.jpg'
 
 Подборка ссылок по Lua, которые следует изучить каждому начинающему:
 
-- [https://learnxinyminutes.com/docs/ru-ru/lua-ru/](https://learnxinyminutes.com/docs/ru-ru/lua-ru/) — русскоязычная шпаргалка по Lua. ([EN оригинал](http://tylerneylon.com/a/learn-lua/))
+- [https://learnxinyminutes.com/docs/ru-ru/lua-ru/](https://learnxinyminutes.com/docs/ru-ru/lua-ru/) — русскоязычная шпаргалка по Lua. ([EN оригинал](https://tylerneylon.com/a/learn-lua/))
 - [https://zserge.wordpress.com/2012/02/23/lua-за-60-минут/](https://zserge.wordpress.com/2012/02/23/lua-за-60-минут/) — Lua за 60 минут
 - [https://www.defold.com/manuals/lua/](https://www.defold.com/manuals/lua/) — официальный Defold мануал по Lua.
 - [https://github.com/Olivine-Labs/lua-style-guide](https://github.com/Olivine-Labs/lua-style-guide) — сodestyle Lua
 - [https://gist.github.com/dapetcu21/c6917b8cf2a4a2bc22a6cc46a7d1f80d](https://gist.github.com/dapetcu21/c6917b8cf2a4a2bc22a6cc46a7d1f80d) — еще один сodestyle с поправками на Defold.
 - [https://www.lua.org/manual/5.1/](https://www.lua.org/manual/5.1/) — полный мануал по Lua.
 - [https://lua.org/pil/contents.html](https://lua.org/pil/contents.html) — онлайновая книга «Программирование в Lua».
-- [http://lua-users.org/wiki/MathLibraryTutorial](http://lua-users.org/wiki/MathLibraryTutorial) — туториал по стандартной math библиотеке.
+- [https://lua-users.org/wiki/MathLibraryTutorial](https://lua-users.org/wiki/MathLibraryTutorial) — туториал по стандартной math библиотеке.
 Попробовать Lua прямо в браузере, что может быть удобно во время изучения, можно по следующим ссылкам:
 
 - [https://defold.com/codepad/](https://defold.com/codepad/) — небольшой онлайн редактор для Defold с несколькими заготовками проектов
@@ -101,8 +101,8 @@ end
 
 - [https://www.lua.org/gems/sample.pdf](https://www.lua.org/gems/sample.pdf) — информация по оптимизации производительности Lua от создателя самого языка.
 - [https://springrts.com/wiki/Lua_Performance](https://springrts.com/wiki/Lua_Performance) — тесты и tips&tricks для лучшей производительности.
-- [http://luatut.com/collectgarbage.html](https://web.archive.org/web/20200828072700/http://luatut.com/collectgarbage.html) — статья о работе сборщика мусора и о методах для ручной работы с ним.
-- [https://quik2dde.ru/viewtopic.php?id=131](https://quik2dde.ru/viewtopic.php?id=131) — туториал по корутинам в Lua ([EN оригинал](http://lua-users.org/wiki/CoroutinesTutorial)).
+- [https://luatut.com/collectgarbage.html](https://web.archive.org/web/20200828072700/https://luatut.com/collectgarbage.html) — статья о работе сборщика мусора и о методах для ручной работы с ним.
+- [https://quik2dde.ru/viewtopic.php?id=131](https://quik2dde.ru/viewtopic.php?id=131) — туториал по корутинам в Lua ([EN оригинал](https://lua-users.org/wiki/CoroutinesTutorial)).
 
 ---
 
