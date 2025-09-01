@@ -1,0 +1,11 @@
+CheckLinks: true
+CheckExternal: true
+
+# Disable other checks; focus on broken links only
+CheckImages: false
+CheckScripts: false
+CheckOpenGraph: false
+CheckFavicon: false
+
+# Keep parsing tolerant for missing hrefs (also set via action input)
+AllowMissingHref: true

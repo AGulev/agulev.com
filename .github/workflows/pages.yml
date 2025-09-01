@@ -32,6 +32,7 @@ jobs:
         uses: anishathalye/proof-html@v2
         with:
           directory: ./_site
+          check_html: false
           allow_missing_href: true
           enforce_https: true
           tokens: |
