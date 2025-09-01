@@ -44,8 +44,8 @@ image: '/wp-content/uploads/2017/08/ccs-208401-0-75174000-1363382404.png'
 - [сайт содержит](https://allenchou.net/game-math-series/) **(eng)** как разъяснения основных математических понятий, так и более узконаправленные вещи: вроде кривых и процедурных анимаций;
 - [**блог**](https://lampogolovii.blogspot.com) замечательного камрада [@Lampogolovii](https://twitter.com/Lampogolovii). Блог и сам по себе очень интересный, как один из немногих «живых» блогов инди разработчиков. Но в рамках этой заметки нам интересен цикл статей по процедурной анимации: [раз](https://lampogolovii.blogspot.com/2017/02/1.html), [два](https://lampogolovii.blogspot.com/2017/03/2.html), [три](https://lampogolovii.blogspot.com/2017/04/3.html), [четыре](https://lampogolovii.blogspot.com/2017/04/4.html), [пять](https://lampogolovii.blogspot.com/2017/05/5.html). Статьи шикарно оформлены и сопровождаются исходным кодом;
 - статьи с интерактивными примерами о том, как работает физика и как написать свой физический движок для 2d игры:
-  - [базовые алгоритмы определения столкновений и реакции на них](https://noregret.org/tutor/n/collision);
-  - [определение столкновений в сетке с тайлами и трассировка лучей](https://noregret.org/tutor/n/grid);
+  - [базовые алгоритмы определения столкновений и реакции на них](https://web.archive.org/web/20220525195618/http://noregret.org/tutor/n/collision/);
+  - [определение столкновений в сетке с тайлами и трассировка лучей](https://web.archive.org/web/20220525201928/http://noregret.org/tutor/n/grid/);
   - [определение столкновений для объектов различных форм](https://jeffreythompson.org/collision-detection/table_of_contents.php).
 - [большая коллекция ссылок](https://essentialmath.com/tutorial.htm) **(eng)** на самые различные темы: от разбора теоретических понятий, до практического применения в геймдеве.
 

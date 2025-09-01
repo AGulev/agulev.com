@@ -32,7 +32,7 @@ image: '/wp-content/uploads/2018/03/businesssize-300x200.jpg'
 
 ## Defold App Manifest
 
-[App Manifest](https://defold.com/manuals/project-settings/#_native_extension) — это конфиг файл, описывающий, какие именно библиотеки вы хотите использовать, а какие вы бы хотели исключить из билда. При сборке приложения этот файл отправляется на билд-сервер. На его основе вам высылают бинарник движка с нужным содержимым под необходимые платформы.
+[App Manifest](https://defold.com/manuals/project-settings/#native-extension) — это конфиг файл, описывающий, какие именно библиотеки вы хотите использовать, а какие вы бы хотели исключить из билда. При сборке приложения этот файл отправляется на билд-сервер. На его основе вам высылают бинарник движка с нужным содержимым под необходимые платформы.
 
 Работать с конфигом очень просто:
 
@@ -48,7 +48,7 @@ image: '/wp-content/uploads/2018/03/businesssize-300x200.jpg'
 
 - Exclude Physics 2D — удаление Box2D физики;
 - Exclude Physics 3D — эта опция отключает Bullet Physics Library;
-- Exclude Record — удаление встроенной [функции записи видео](https://defold.com/ref/sys/#start_record:file_name-frame_period-fps);
+- Exclude Record — удаление встроенной [функции записи видео](https://defold.com/ref/sys/#start_record);
 - Exclude Profiler — удаление встроенного профайлера;
 - Exclude Facebook — удаление Facebook SDK;
 - Exclude Gameroom — удаление Facebook Gameroom;

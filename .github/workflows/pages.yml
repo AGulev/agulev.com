@@ -52,6 +52,8 @@ jobs:
             ^https://www.linkedin.com/.*
             ^https://linkedin.com/.*
             ^https://in.linkedin.com/.*
+            ^https://forum.defold.com/.*
+            ^https://www.reddit.com
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

@@ -18,7 +18,7 @@ image: '/wp-content/uploads/2019/03/preview-300x282.jpg'
 Easing functions are an important tool not only for the animator but also for programmers, it helps to bring beauty using just math. If you haven't figured out how they work, then, especially for you, I made a small interactive demo on Defold with all the easing functions available in the engine and the ability to register own vector instead of the prepared function and see how it works.
 
 Animation manual in Defold:  
-<https://defold.com/manuals/animation/#_easing>
+<https://defold.com/manuals/property-animation/>
 
 <iframe height="512" scrolling="no" src="/html/easier/index.html" width="640"></iframe>
 

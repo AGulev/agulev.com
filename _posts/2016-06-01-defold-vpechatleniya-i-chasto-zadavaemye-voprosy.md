@@ -36,9 +36,9 @@ Cпециально достал из тумбочки старенький [Hua
 
 В процессе изучения я наткнулся на множество приятных мелочей, от которых только восторг:
 
-- [рендер скрипты](https://defold.com/manuals/rendering/);
+- [рендер скрипты](https://defold.com/manuals/render/#the-render-script);
 - [система сообщений](https://defold.com/manuals/message-passing/);
-- [работа с материалами](https://defold.com/manuals/materials/);
+- [работа с материалами](https://defold.com/manuals/material/);
 - [классное комьюнити](https://forum.defold.com);
 - [обширная документация](https://defold.com/learn/) и т.д.
 
@@ -50,7 +50,7 @@ Cпециально достал из тумбочки старенький [Hua
 
 **На чем пишутся скрипты в Defold?**
 
-Lua — очень простой язык. Я впервые попробовал писать на нем именно в этом движке и уже работаю не напрягаясь ([много ссылок на полезные ресурсы по lua](https://forum.defold.com/t/big-list-of-lua-resources/1586)). А здесь моя заметка по связке [Atom+Defold](https://agulev.com/defold-nastraivaem-atom/).
+Lua — очень простой язык. Я впервые попробовал писать на нем именно в этом движке и уже работаю не напрягаясь ([много ссылок на полезные ресурсы по lua](https://forum.defold.com/t/big-list-of-lua-resources/1586)).
 
 **Под какие платформы можно собирать игру на Defold?**
 

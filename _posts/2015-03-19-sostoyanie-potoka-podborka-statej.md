@@ -34,7 +34,7 @@ image: '/wp-content/uploads/2015/03/7.jpg'
 
 От личной эффективности перейдем к геймдизайну.
 
-Благодаря Empathy Box появился перевод замечательной диссертации Дженовы Чена. Материал подробно поясняющий почему и как использовать поток во благо геймдизайна. [Можно скачать PDF на официальном сайте.](https://jenovachen.com/flowingames/thesis.htm) Или же прочитать статьи на [EmpathyBox.me](https://empathybox.me): [часть первая](https://empathybox.me/archives/1595), [часть вторая](https://empathybox.me/archives/1652), [финал](https://empathybox.me/archives/1699).
+Благодаря Empathy Box появился перевод замечательной диссертации Дженовы Чена. Материал подробно поясняющий почему и как использовать поток во благо геймдизайна. [Можно скачать PDF на официальном сайте.](https://jenovachen.com/flowingames/thesis.htm) Переводы: [часть первая](https://web.archive.org/web/20150602032329/empathybox.me/archives/1595), [часть вторая](https://web.archive.org/web/20140902104544/empathybox.me/archives/1652), [финал](https://web.archive.org/web/20140902060303/empathybox.me/archives/1699).
 
 [Теория погружения в видеоигры](https://progamer.ru/dev/vg-immersion.htm) — статья о том, что происходит в голове игрока при погружении в игру и как это не испортить.
 
