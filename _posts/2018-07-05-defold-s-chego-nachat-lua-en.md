@@ -37,10 +37,10 @@ A few links about Lua I would recommend for all beginners:
 
 - [https://tylerneylon.com/a/learn-lua/](https://tylerneylon.com/a/learn-lua/) — Learn Lua in 15 minutes. For people who have never used Lua before, it is especially helpful to keep this page open and check it out if you forget something.
 - [https://writeabout.tech/programming/lua-in-60-minutes/](https://writeabout.tech/programming/lua-in-60-minutes/) — Lua in 60 minutes
-- [https://www.defold.com/manuals/lua/](https://www.defold.com/manuals/lua/) — Lua in Defold. Official manual.
+- [https://defold.com/manuals/lua/](https://defold.com/manuals/lua/) — Lua in Defold. Official manual.
 - [https://github.com/Olivine-Labs/lua-style-guide](https://github.com/Olivine-Labs/lua-style-guide) — a code style for Lua.
 - [https://gist.github.com/dapetcu21/c6917b8cf2a4a2bc22a6cc46a7d1f80d](https://gist.github.com/dapetcu21/c6917b8cf2a4a2bc22a6cc46a7d1f80d) — a one more сode style changed specially for Defold.
-- [https://www.lua.org/manual/5.1/](https://www.lua.org/manual/5.1/) — Lua 5.1 Reference Manual.
+- [https://lua.org/manual/5.1/](https://lua.org/manual/5.1/) — Lua 5.1 Reference Manual.
 - [https://lua.org/pil/contents.html](https://lua.org/pil/contents.html) — Book: "Programming in Lua" (first edition).
 - [https://lua-users.org/wiki/MathLibraryTutorial](https://lua-users.org/wiki/MathLibraryTutorial) — Math Library Tutorial.
 
@@ -103,7 +103,7 @@ In addition to the built-in code editor in Defold Editor itself, plugins are ava
 
 A few links for a more in-depth study:
 
-- [https://www.lua.org/gems/sample.pdf](https://www.lua.org/gems/sample.pdf) — Lua Performance Tips
+- [https://lua.org/gems/sample.pdf](https://lua.org/gems/sample.pdf) — Lua Performance Tips
 - [https://springrts.com/wiki/Lua_Performance](https://springrts.com/wiki/Lua_Performance) — Lua Performance tips&tricks.
 - [https://luatut.com/collectgarbage.html](https://luatut.com/collectgarbage.html) — `collectgarbage` function in Lua
 - [https://lua-users.org/wiki/CoroutinesTutorial](https://lua-users.org/wiki/CoroutinesTutorial) — Coroutines Tutorial

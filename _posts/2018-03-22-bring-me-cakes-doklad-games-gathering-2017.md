@@ -17,5 +17,5 @@ image: '/wp-content/video-previews/bring-me-cakes-doklad-games-gathering-2017.jp
 Доклад с Games Gathering 2017 «Разработка при технической поддержке команды King».
 
 <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SNxqYR6zyug" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/SNxqYR6zyug" frameborder="0" allowfullscreen></iframe>
 </div>

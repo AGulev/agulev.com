@@ -14,7 +14,7 @@ image: '/wp-content/video-previews/aleksej-gulev-pochemu-defold-besplatnyj-pilim
 ---
 
 <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cK0MtqhrxwM" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/cK0MtqhrxwM" frameborder="0" allowfullscreen></iframe>
 </div>
 
-[ПИЛИМ, ТРЕМ. Подкаст о разработке игр: Алексей Гулев — почему Defold бесплатный?](https://www.youtube.com/watch?v=cK0MtqhrxwM)
+[ПИЛИМ, ТРЕМ. Подкаст о разработке игр: Алексей Гулев — почему Defold бесплатный?](https://youtube.com/watch?v=cK0MtqhrxwM)

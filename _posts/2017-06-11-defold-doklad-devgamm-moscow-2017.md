@@ -20,5 +20,5 @@ image: '/wp-content/video-previews/defold-doklad-devgamm-moscow-2017.jpg'
 Это мой первый опыт публичного выступления на таком крупном мероприятии, буду рад любым комментариям.
 
 <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fiu2VV5Qv1E" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/fiu2VV5Qv1E" frameborder="0" allowfullscreen></iframe>
 </div>

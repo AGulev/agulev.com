@@ -14,7 +14,7 @@ image: '/wp-content/video-previews/aleksej-gulev-oleg-pridyuk-dvigatel-defold-ol
 ---
 
 <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MTwSFGVLDzI" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/MTwSFGVLDzI" frameborder="0" allowfullscreen></iframe>
 </div>
 
-[Подкаст "Как Делают Игры":Алексей Гулев, Олег Придюк и двигатель Defold с Олегом Чумаковым](https://www.youtube.com/watch?v=MTwSFGVLDzI)
+[Подкаст "Как Делают Игры":Алексей Гулев, Олег Придюк и двигатель Defold с Олегом Чумаковым](https://youtube.com/watch?v=MTwSFGVLDzI)

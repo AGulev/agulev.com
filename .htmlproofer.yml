@@ -17,6 +17,7 @@ url_ignore:
   - https://www.facebook.com/.*
   - https://t.me/.*
   - https://gist.github.com/.*
+  - https://forum.defold.com/.*
   # LinkedIn aggressively blocks bots (returns 999), ignore to avoid CI flakiness
   - https://www.linkedin.com/.*
   - https://linkedin.com/.*
@@ -36,6 +37,7 @@ ignore_urls:
   - https://www.facebook.com/.*
   - https://t.me/.*
   - https://gist.github.com/.*
+  - https://forum.defold.com/.*
   - https://www.linkedin.com/.*
   - https://linkedin.com/.*
   - https://in.linkedin.com/.*

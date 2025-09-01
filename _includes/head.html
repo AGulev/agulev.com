@@ -1,7 +1,9 @@
 <head>
 	<meta charset="utf-8">
 
+  {% unless page.permalink == '/404.html' %}
   {% seo %}
+  {% endunless %}
 
   {% comment %} Discoverable feed link {% endcomment %}
   <link rel="alternate" type="application/atom+xml" href="{{ site.baseurl }}/feed.xml" title="{{ site.title }} feed">

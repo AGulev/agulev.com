@@ -27,13 +27,13 @@ image: '/wp-content/uploads/2021/08/def-1024x411-1.png'
 
 ## Обзор обучающих материалов сайта Defold.com
 
-Большая часть полезностей по движку находится в одном месте — это [Learn center движка](https://www.defold.com/learn/) и начинать лучше всего именно с этой страницы.
+Большая часть полезностей по движку находится в одном месте — это [Learn center движка](https://defold.com/learn/) и начинать лучше всего именно с этой страницы.
 
 ![Learn Center](/wp-content/uploads/2018/08/2018-08-19_12-40-17-1024x745.jpg)
 
 Конечно, можно было бы ограничиться ссылкой, но несмотря на то, что все пользователи Defold были на этой странице, не все внимательно изучили её содержимое. Давайте подробнее разберем, что полезного там есть.
 
-### [Manuals](https://www.defold.com/manuals/introduction/)
+### [Manuals](https://defold.com/manuals/introduction/)
 
 ![Manuals](/wp-content/uploads/2018/08/2018-08-19_12-54-11.jpg)
 
@@ -47,19 +47,19 @@ image: '/wp-content/uploads/2021/08/def-1024x411-1.png'
 
 Мануалы постоянно поддерживаются в актуальном состоянии.
 
-### [API Reference](https://www.defold.com/ref/sys/)
+### [API Reference](https://defold.com/ref/sys/)
 
 ![API Reference](/wp-content/uploads/2018/08/2018-08-19_13-11-55.jpg)
 
 Не менее важный раздел, в котором, я надеюсь, вы проведете не меньше времени, чем в мануалах. В нем собрана вся документация по методам API движка, по стандартным библиотекам Lua, а также по Defold SDK (методы, доступные из C++ для написания нативных плагинов).
 
-### [Examples](https://defold.com/examples/basics/simple_move/)
+### [Examples](https://defold.com/examples/)
 
 ![Examples](/wp-content/uploads/2018/08/2018-08-19_12-56-30.jpg)
 
 Как ясно из названия, это примеры кода с пояснениями и демками прямо в браузере. Ничего сложного в разделе нет, только базовая работа с API движка и типичными случаями использования. Очень полезно для начинающих, чтобы быстро подсмотреть реализацию тех или иных базовых вещей.
 
-### [Tutorials](https://www.defold.com/tutorials/getting-started/)
+### [Tutorials](https://defold.com/tutorials/)
 
 ![Tutorials](/wp-content/uploads/2018/08/2018-08-19_13-16-43.jpg)
 
@@ -67,9 +67,9 @@ image: '/wp-content/uploads/2021/08/def-1024x411-1.png'
 
 Но это не значит, что все материалы только для начинающих. Там есть замечательные туториалы для более продвинутых пользователей, например:
 
-- [туториал для тех, кто забыл векторную математику;](https://www.defold.com/tutorials/movement/)
-- [туториал по использованию в Defold шейдеров сайта shadertoy;](https://www.defold.com/tutorials/shadertoy/)
-- [color grading туториал](https://www.defold.com/tutorials/grading/) по созданию и использованию своего постэффект-шейдера.
+- [туториал для тех, кто забыл векторную математику;](https://defold.com/tutorials/movement/)
+- [туториал по использованию в Defold шейдеров сайта shadertoy;](https://defold.com/tutorials/shadertoy/)
+- [color grading туториал](https://defold.com/tutorials/grading/) по созданию и использованию своего постэффект-шейдера.
 
 Кроме того, в этот раздел запрятали ссылки на внешние ресурсы с примерами, о которых я расскажу ниже.
 
@@ -87,13 +87,13 @@ image: '/wp-content/uploads/2021/08/def-1024x411-1.png'
 
 ### Туториалы и мануалы.
 
-- [Unfolding Gamedev](https://www.youtube.com/@unfolding_gamedev/videos) — канал с пояснениями концепций движка и туториалами.
-- [GameFromScratch](https://www.gamefromscratch.com/page/Defold-Engine-Tutorial-Series.aspx/) — довольно подробный обзорный туториал по всем основным аспектам движка. Несмотря на то, что сделан он был еще на первом редакторе, он все еще не потерял актуальности (просто визуально отличается от новой версии редактора).
-- [David Chadwick](https://www.youtube.com/channel/UCkHxiTiccq97knREKsi5UKA) — делает замечательные серии туториалов с исходным кодом по созданию различных игр на Defold.
-- [Официальный youtube канал Defold,](https://www.youtube.com/user/defoldvideos/featured) на котором есть [отдельный плейлист с русскоязычными материалами](https://www.youtube.com/watch?v=4_pf4w7i7I4&list=PLXsXu5srjNlxFX6LU3uQedjXmtPn8nDmR)
+- [Unfolding Gamedev](https://youtube.com/@unfolding_gamedev/videos) — канал с пояснениями концепций движка и туториалами.
+- [GameFromScratch](https://gamefromscratch.com/page/Defold-Engine-Tutorial-Series.aspx/) — довольно подробный обзорный туториал по всем основным аспектам движка. Несмотря на то, что сделан он был еще на первом редакторе, он все еще не потерял актуальности (просто визуально отличается от новой версии редактора).
+- [David Chadwick](https://youtube.com/channel/UCkHxiTiccq97knREKsi5UKA) — делает замечательные серии туториалов с исходным кодом по созданию различных игр на Defold.
+- [Официальный youtube канал Defold,](https://youtube.com/user/defoldvideos/featured) на котором есть [отдельный плейлист с русскоязычными материалами](https://youtube.com/watch?v=4_pf4w7i7I4&list=PLXsXu5srjNlxFX6LU3uQedjXmtPn8nDmR)
 - [«Что еще за Defold и с чем его едят?»](https://habr.com/post/416461/) — обзорная статья на habr от Сергея Грицаенко.
 - [Статьи и мануалы из моего блога](/category/defold/), которые легко фильтруются по категории Defold.
-- [Insality Games](https://www.youtube.com/channel/UCGiLYMS80KDDpIMLc2Nqk_Q) — стримы от Максима Туприкова, где он разрабатывает игру на Defold «от и до».
+- [Insality Games](https://youtube.com/channel/UCGiLYMS80KDDpIMLc2Nqk_Q) — стримы от Максима Туприкова, где он разрабатывает игру на Defold «от и до».
 
 ---
 

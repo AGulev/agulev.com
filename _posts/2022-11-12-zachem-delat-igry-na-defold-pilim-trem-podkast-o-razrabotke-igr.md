@@ -14,7 +14,7 @@ image: '/wp-content/video-previews/zachem-delat-igry-na-defold-pilim-trem-podkas
 ---
 
 <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SH8Zx_Q0wms" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/SH8Zx_Q0wms" frameborder="0" allowfullscreen></iframe>
 </div>
 
-[ПИЛИМ, ТРЕМ. Подкаст о разработке игр: Зачем делать игры на Defold](https://www.youtube.com/watch?v=SH8Zx_Q0wms)
+[ПИЛИМ, ТРЕМ. Подкаст о разработке игр: Зачем делать игры на Defold](https://youtube.com/watch?v=SH8Zx_Q0wms)

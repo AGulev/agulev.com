@@ -100,5 +100,5 @@ Therefore, the usefulness of such a list as an attempt to invent game worlds is 
 The list of references to the topic:
 
 - [How I converted old mechanics into brand-new mechanics](https://medium.com/@zarkua/как-я-переделывал-старую-механику-в-абсолютно-новую-3fc66d962f82#.vebp83dty);
-- [Three Hundred Mechanics](https://www.squidi.net/three/);
-- [Understanding your game through data](https://www.youtube.com/watch?v=8AUK8Vge4-k&t=21s&index=6&list=PLBmERAe8ffea_aFWN6jUrNTEz9vXpW0t0).
+- [Three Hundred Mechanics](https://squidi.net/three/);
+- [Understanding your game through data](https://youtube.com/watch?v=8AUK8Vge4-k&t=21s&index=6&list=PLBmERAe8ffea_aFWN6jUrNTEz9vXpW0t0).
