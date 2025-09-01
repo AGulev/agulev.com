@@ -28,8 +28,30 @@ jobs:
           bundler-cache: true
       - name: Build site
         run: bundle exec jekyll build --trace
-      - name: HTMLProofer
-        run: bundle exec htmlproofer ./_site
+      - name: Proof HTML
+        uses: anishathalye/proof-html@v2
+        with:
+          directory: ./_site
+          allow_missing_href: true
+          enforce_https: true
+          tokens: |
+            {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
+          ignore_url_re: |
+            ^mailto:
+            ^tel:
+            https://fonts.googleapis.com/.*
+            https://fonts.gstatic.com/.*
+            ^https://twitter.com/.*
+            ^https://x.com/.*
+            ^https://bsky.app/.*
+            ^https://mastodon.gamedev.place/.*
+            ^https://facebook.com/.*
+            ^https://www.facebook.com/.*
+            ^https://t.me/.*
+            ^https://gist.github.com/.*
+            ^https://www.linkedin.com/.*
+            ^https://linkedin.com/.*
+            ^https://in.linkedin.com/.*
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

@@ -22,6 +22,24 @@ url_ignore:
   - https://linkedin.com/.*
   - https://in.linkedin.com/.*
 
+# Duplicate with the new key name used in recent html-proofer versions
+ignore_urls:
+  - ^mailto:
+  - ^tel:
+  - https://fonts.googleapis.com/.*
+  - https://fonts.gstatic.com/.*
+  - https://twitter.com/.*
+  - https://x.com/.*
+  - https://bsky.app/.*
+  - https://mastodon.gamedev.place/.*
+  - https://facebook.com/.*
+  - https://www.facebook.com/.*
+  - https://t.me/.*
+  - https://gist.github.com/.*
+  - https://www.linkedin.com/.*
+  - https://linkedin.com/.*
+  - https://in.linkedin.com/.*
+
 # Ignore common non-200 statuses that often block bots
 http_status_ignore:
   - 403
