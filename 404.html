@@ -1,0 +1,24 @@
+---
+permalink: /404.html
+layout: default
+title: 404 Not Found
+noindex: true
+sitemap: false
+---
+
+<div class="wrapper" style="max-width:800px;margin:40px auto;padding:0 20px;">
+  <h1>Page not found (404)</h1>
+  <p>The page you’re looking for doesn’t exist or was moved.</p>
+  <ul>
+    <li><a href="{{ site.baseurl }}/">Go to Russian home</a></li>
+    <li><a href="{{ site.baseurl }}/en/">Go to English home</a></li>
+    <li><a href="{{ site.baseurl }}/archive/">Browse the archive</a></li>
+  </ul>
+  <h2>Latest posts</h2>
+  <ul>
+    {% for post in site.posts limit:5 %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+

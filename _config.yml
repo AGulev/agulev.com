@@ -4,6 +4,10 @@ description: "GameDevLog - Game Development Blog"
 url: "https://agulev.com"
 baseurl: ""
 permalink: ':title/'
+lang: ru
+twitter:
+  username: AGulev
+logo: /assets/img/agulev.jpg
 # Author Settings
 author: "Alexey Gulev"
 author-img: "agulev.jpg" # add your photo
@@ -46,6 +50,7 @@ plugins:
   - jekyll-paginate-v2
   - jemoji
   - jekyll-relative-links
+  - jekyll-last-modified-at
 
 # Collections
 collections:
@@ -64,11 +69,17 @@ defaults:
 # Exclude files from build
 exclude:
   - README.md
+  - AGENTS.md
   - Gemfile
   - Gemfile.lock
   - vendor/
   - temp-flexible-theme/
   - backup-theme/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - .github/
+  - CLAUDE.md
 
 # Include html folder for static file serving
 include:

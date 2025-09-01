@@ -6,6 +6,12 @@ gem "github-pages", group: :jekyll_plugins
 # Pagination plugin (using v2 for newer Jekyll compatibility)
 gem "jekyll-paginate-v2", group: :jekyll_plugins
 
+# Last modified timestamps for SEO and templates
+gem "jekyll-last-modified-at", group: :jekyll_plugins
+
+# HTML validation/link checking for CI
+gem "html-proofer", group: :test
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do

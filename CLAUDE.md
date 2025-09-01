@@ -44,7 +44,7 @@ The site automatically deploys to GitHub Pages via GitHub Actions when pushing t
 ### Assets & Media
 - **assets/css/**: SCSS stylesheets with parts/ subdirectory for modular styles
 - **assets/fonts/**: Icon fonts (icomoon)
-- **assets/js/**: JavaScript files including language switcher
+- **assets/js/**: JavaScript files including language switcher with shared LanguageUtils
 - **wp-content/uploads/**: Media files migrated from WordPress, organized by year/month
 
 ### Special Features
@@ -75,3 +75,19 @@ This blog was migrated from WordPress to Jekyll, preserving:
 - YAML front matter should include title, layout (defaults to "post"), and any custom variables
 - Media files should be placed in `wp-content/uploads/YYYY/MM/` to maintain consistency
 - Language-specific content goes in appropriate subdirectories (/en/, /ru/)
+- Posts can have `locale: en` in front matter to mark them as English (defaults to Russian)
+
+## Language System Implementation
+### JavaScript Architecture
+- **LanguageUtils** (window.LanguageUtils): Global utility for language detection and preference management
+  - `detectBrowserLanguage()`: Detects if user prefers Russian based on navigator.languages
+  - `getInitialLanguage()`: Gets saved preference or detects from browser
+  - `saveLanguage(lang)`: Saves preference to localStorage
+- **Main pages**: Use language switcher for navigation between /ru/, /en/, and / (all)
+- **Archive/Tags pages**: Use client-side filtering with adaptive 2/3-column layouts
+
+### Layout Behavior
+- **Default**: 3-column layout (Date | Russian | English)
+- **Single language filter**: 2-column layout (Date | Selected Language)
+- Language preference persists across all page types via localStorage
+- Auto-detection works on direct visits to any page

@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # needed for jekyll-last-modified-at to access git history
       - uses: actions/configure-pages@v5
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -26,6 +28,8 @@ jobs:
           bundler-cache: true
       - name: Build site
         run: bundle exec jekyll build --trace
+      - name: HTMLProofer
+        run: bundle exec htmlproofer ./_site --fail-on-warning
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

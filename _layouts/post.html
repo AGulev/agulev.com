@@ -19,8 +19,9 @@ layout: main
         <h1 class="page-title">{{page.title}}</h1>
         <div class="page-date">
           <span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          {% if page.last_update %}
-            <br><small>Last updated: {{ page.last_update | date: '%Y, %b %d' }}</small>
+          {% assign updated_at = page.last_update | default: page.last_modified_at %}
+          {% if updated_at %}
+            <br><small>Last updated: {{ updated_at | date: '%Y, %b %d' }}</small>
           {% endif %}
         </div>
       </header>

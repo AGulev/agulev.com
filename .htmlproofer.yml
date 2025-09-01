@@ -1,0 +1,25 @@
+assume_extension: true
+check_html: true
+allow_missing_href: true
+enforce_https: true
+
+# Reduce CI flakiness by ignoring known unstable/external hosts and non-http schemes
+url_ignore:
+  - ^mailto:
+  - ^tel:
+  - https://fonts.googleapis.com/.*
+  - https://fonts.gstatic.com/.*
+  - https://twitter.com/.*
+  - https://x.com/.*
+  - https://bsky.app/.*
+  - https://mastodon.gamedev.place/.*
+  - https://facebook.com/.*
+  - https://www.facebook.com/.*
+  - https://t.me/.*
+  - https://gist.github.com/.*
+
+# Ignore common non-200 statuses that often block bots
+http_status_ignore:
+  - 403
+  - 429
+  - 999

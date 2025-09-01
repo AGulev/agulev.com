@@ -1,0 +1,34 @@
+{%- comment -%}
+  Hreflang mapping
+  - For posts: auto-detect RU/EN pair by matching URLs with and without '/en/' prefix.
+  - For pages with explicit front matter: use `alt_url_en` and/or `alt_url_ru`.
+{%- endcomment -%}
+
+{%- assign page_is_post = page.layout == 'post' -%}
+
+{%- if page_is_post -%}
+  {%- assign base_url = page.url | replace_first: '/en/', '/' -%}
+  {%- assign ru_href = nil -%}
+  {%- assign en_href = nil -%}
+  {%- for p in site.posts -%}
+    {%- if p.url == base_url and p.locale == 'ru' -%}
+      {%- assign ru_href = site.url | append: p.url -%}
+    {%- endif -%}
+    {%- assign candidate_en = base_url | prepend: '/en' -%}
+    {%- if p.url == candidate_en and p.locale == 'en' -%}
+      {%- assign en_href = site.url | append: p.url -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if ru_href %}<link rel="alternate" hreflang="ru" href="{{ ru_href }}">{%- endif -%}
+  {%- if en_href %}<link rel="alternate" hreflang="en" href="{{ en_href }}">{%- endif -%}
+  {%- if ru_href or en_href -%}
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ base_url }}">
+  {%- endif -%}
+{%- endif -%}
+
+{%- if page.alt_url_ru or page.alt_url_en -%}
+  {%- if page.alt_url_ru -%}<link rel="alternate" hreflang="ru" href="{{ site.url }}{{ page.alt_url_ru }}">{%- endif -%}
+  {%- if page.alt_url_en -%}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.alt_url_en }}">{%- endif -%}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.alt_url_ru | default: page.alt_url_en }}">
+{%- endif -%}
+
