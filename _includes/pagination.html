@@ -1,11 +1,19 @@
 <nav class="pagination" role="pagination">
   <div class="pagination-row">
     <div class="pagination-left">
-      <div class="language-switcher">
-        <button class="lang-btn" data-lang="all">All</button>
-        <button class="lang-btn" data-lang="ru">RU</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
+      <details class="language-switcher">
+        <summary class="lang-toggle" aria-label="Language menu">
+          <svg class="lang-toggle-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 6h-2.2c-.2-1.2-.6-2.3-1.2-3.2 1.5.6 2.8 1.7 3.4 3.2zM12 4c.8 1.1 1.4 2.4 1.6 4h-3.2C10.6 6.4 11.2 5.1 12 4zM4 12c0-.7.1-1.4.3-2h3c-.1.7-.2 1.3-.2 2s.1 1.3.2 2h-3c-.2-.6-.3-1.3-.3-2zm.5 4h2.2c.2 1.2.6 2.3 1.2 3.2-1.5-.6-2.8-1.7-3.4-3.2zM7 8H4.5c.7-1.5 1.9-2.6 3.4-3.2-.6.9-1 2-1.2 3.2zm1.4 4c-.1-.7-.2-1.3-.2-2s.1-1.3.2-2h3.6c.1.7.2 1.3.2 2s-.1 1.3-.2 2H8.4zm.4 4c-.6-.9-1-2-1.2-3.2h2.2c.2 1.2.6 2.3 1.2 3.2-.8-.3-1.6-.7-2.2-1.2zm3 1c-.8-1.1-1.4-2.4-1.6-4h3.2c-.2 1.6-.8 2.9-1.6 4zm2.8-.8c.6-.9 1-2 1.2-3.2h2.2c-.7 1.5-1.9 2.6-3.4 3.2zm1.4-4.2c.1-.7.2-1.3.2-2s-.1-1.3-.2-2h3c.2.6.3 1.3.3 2s-.1 1.4-.3 2h-3zm.2-4c-.2-1.2-.6-2.3-1.2-3.2 1.5.6 2.8 1.7 3.4 3.2h-2.2z" fill="currentColor"></path>
+          </svg>
+          <span class="sr-only">Language</span>
+        </summary>
+        <div class="lang-menu">
+          <button class="lang-btn" data-lang="all">All</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </details>
     </div>
     
     <div class="pagination-center">
