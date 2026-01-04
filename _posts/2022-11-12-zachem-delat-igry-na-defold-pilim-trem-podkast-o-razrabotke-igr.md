@@ -4,7 +4,9 @@ categories:
 - defold
 date: '2022-11-12T11:09:48+03:00'
 locale: ru
+lang: ru
 layout: post
+permalink: /zachem-delat-igry-na-defold-pilim-trem-podkast-o-razrabotke-igr/
 tags:
 - defold
 - podcast

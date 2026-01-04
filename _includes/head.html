@@ -5,8 +5,9 @@
   {% seo %}
   {% endunless %}
 
-  {% comment %} Discoverable feed link {% endcomment %}
-  <link rel="alternate" type="application/atom+xml" href="{{ site.baseurl }}/feed.xml" title="{{ site.title }} feed">
+  {% comment %} Discoverable feed links {% endcomment %}
+  <link rel="alternate" type="application/atom+xml" href="{{ site.baseurl }}/feed-en.xml" title="{{ site.title }} feed (EN)">
+  <link rel="alternate" type="application/atom+xml" href="{{ site.baseurl }}/feed-ru.xml" title="{{ site.title }} feed (RU)">
 
   {% comment %} Noindex rules for thin pages & pagination {% endcomment %}
   {% if page.noindex %}

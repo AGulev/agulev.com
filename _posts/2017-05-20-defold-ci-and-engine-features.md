@@ -4,9 +4,11 @@ categories:
 - defold
 date: '2017-05-20T21:37:07+03:00'
 locale: ru
+lang: ru
 dsq_thread_id:
 - '5835153939'
 layout: post
+permalink: /defold-ci-and-engine-features/
 tags:
 - defold
 - conference talk

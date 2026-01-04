@@ -4,7 +4,9 @@ categories:
 - defold
 date: '2018-04-28T10:45:00+03:00'
 locale: ru
+lang: ru
 layout: post
+permalink: /poezda-v-ofis-king-v-komandu-defold/
 tags:
 - defold
 title: Поездка в офис King в команду Defold

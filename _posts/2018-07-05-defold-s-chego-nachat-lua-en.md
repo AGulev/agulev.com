@@ -5,6 +5,7 @@ categories:
 - избранное
 date: '2018-07-05T17:31:39+03:00'
 locale: en
+lang: en
 layout: post
 permalink: /en/defold-s-chego-nachat-lua/
 tags:

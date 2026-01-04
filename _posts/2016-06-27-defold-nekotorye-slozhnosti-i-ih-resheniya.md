@@ -4,6 +4,7 @@ categories:
 - defold
 date: '2016-06-27T23:20:20+03:00'
 locale: ru
+lang: ru
 last_update: 2021-01-02
 dsq_thread_id:
 - '4943357620'

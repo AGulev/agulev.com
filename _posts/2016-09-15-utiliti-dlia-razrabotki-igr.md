@@ -5,6 +5,7 @@ categories:
 - unity
 date: '2016-09-15T23:25:37+03:00'
 locale: ru
+lang: ru
 dsq_thread_id:
 - '5147253454'
 layout: post

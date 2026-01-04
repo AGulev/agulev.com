@@ -4,6 +4,7 @@ categories:
 - gamedesign
 date: '2017-01-07T18:16:44+03:00'
 locale: en
+lang: en
 layout: post
 permalink: /en/poisk-idei-dlya-igry/
 tags:

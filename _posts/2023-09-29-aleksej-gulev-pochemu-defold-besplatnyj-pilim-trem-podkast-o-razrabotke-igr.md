@@ -4,7 +4,9 @@ categories:
 - defold
 date: '2023-09-29T21:56:33+03:00'
 locale: ru
+lang: ru
 layout: post
+permalink: /aleksej-gulev-pochemu-defold-besplatnyj-pilim-trem-podkast-o-razrabotke-igr/
 tags:
 - defold
 - podcast

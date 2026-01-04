@@ -4,8 +4,10 @@ categories:
 - defold
 date: '2018-03-11T23:05:49+03:00'
 locale: ru
+lang: ru
 last_update: 2021-01-02
 layout: post
+permalink: /defold-umenshaem-razmer-bilda-app-manifest/
 lazyload_thumbnail_quality:
 - default
 tags:

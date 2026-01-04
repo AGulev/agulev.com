@@ -5,6 +5,7 @@ categories:
 - unity
 date: '2016-08-30T16:29:59+03:00'
 locale: ru
+lang: ru
 last_update: 2021-01-02
 dsq_thread_id:
 - '5106095570'

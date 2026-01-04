@@ -4,6 +4,7 @@ categories:
 - defold
 date: '2016-05-03T15:43:10+03:00'
 locale: ru
+lang: ru
 last_update: 2021-01-02
 layout: post
 permalink: /defold-razmer-bilda/

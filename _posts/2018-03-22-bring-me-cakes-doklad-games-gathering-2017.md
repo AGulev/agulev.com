@@ -5,7 +5,9 @@ categories:
 - postmortems
 date: '2018-03-22T10:51:29+03:00'
 locale: ru
+lang: ru
 layout: post
+permalink: /bring-me-cakes-doklad-games-gathering-2017/
 tags:
 - defold
 - conference talk

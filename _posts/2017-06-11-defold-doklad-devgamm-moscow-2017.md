@@ -4,9 +4,11 @@ categories:
 - defold
 date: '2017-06-11T19:39:52+03:00'
 locale: ru
+lang: ru
 dsq_thread_id:
 - '5900798389'
 layout: post
+permalink: /defold-doklad-devgamm-moscow-2017/
 tags:
 - defold
 - conference talk

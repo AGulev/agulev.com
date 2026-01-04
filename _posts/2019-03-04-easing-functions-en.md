@@ -4,6 +4,7 @@ categories:
 - defold
 date: '2019-03-04T21:54:03+03:00'
 locale: en
+lang: en
 layout: post
 permalink: /en/easing-functions/
 tags:

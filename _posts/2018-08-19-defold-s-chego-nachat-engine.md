@@ -5,6 +5,7 @@ categories:
 - избранное
 date: '2018-08-19T18:00:05+03:00'
 locale: ru
+lang: ru
 last_update: 2023-10-04
 layout: post
 permalink: /defold-s-chego-nachat-engine/

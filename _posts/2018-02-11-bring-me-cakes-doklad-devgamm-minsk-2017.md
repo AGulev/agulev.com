@@ -5,7 +5,9 @@ categories:
 - postmortems
 date: '2018-02-11T13:40:12+03:00'
 locale: ru
+lang: ru
 layout: post
+permalink: /bring-me-cakes-doklad-devgamm-minsk-2017/
 tags:
 - defold
 - conference talk

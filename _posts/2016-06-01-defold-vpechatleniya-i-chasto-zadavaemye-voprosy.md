@@ -4,6 +4,7 @@ categories:
 - defold
 date: '2016-06-01T22:36:29+03:00'
 locale: ru
+lang: ru
 last_update: 2021-01-02
 layout: post
 permalink: /defold-vpechatleniya-i-chasto-zadavaemye-voprosy/

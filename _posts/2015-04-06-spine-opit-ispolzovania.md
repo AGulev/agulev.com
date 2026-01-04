@@ -4,6 +4,7 @@ categories:
 - tools
 date: '2015-04-06T14:05:36+03:00'
 locale: ru
+lang: ru
 dsq_thread_id:
 - '3658602037'
 layout: post

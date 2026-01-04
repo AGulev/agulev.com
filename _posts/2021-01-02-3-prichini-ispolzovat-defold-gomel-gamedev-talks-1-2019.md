@@ -4,7 +4,9 @@ categories:
 - defold
 date: '2021-01-02T12:57:16+03:00'
 locale: ru
+lang: ru
 layout: post
+permalink: /3-prichini-ispolzovat-defold-gomel-gamedev-talks-1-2019/
 tags:
 - defold
 - conference talk

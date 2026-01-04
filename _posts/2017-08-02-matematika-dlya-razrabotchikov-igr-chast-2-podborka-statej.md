@@ -4,6 +4,7 @@ categories:
 - избранное
 date: '2017-08-02T16:19:47+03:00'
 locale: ru
+lang: ru
 dsq_thread_id:
 - '6035509361'
 layout: post

@@ -4,6 +4,7 @@ categories:
 - избранное
 date: '2015-03-11T23:08:32+03:00'
 locale: ru
+lang: ru
 dsq_thread_id:
 - '3587291773'
 layout: post

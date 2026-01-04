@@ -4,6 +4,7 @@ categories:
 - defold
 date: '2019-03-04T21:54:03+03:00'
 locale: ru
+lang: ru
 layout: post
 lazyload_thumbnail_quality:
 - default

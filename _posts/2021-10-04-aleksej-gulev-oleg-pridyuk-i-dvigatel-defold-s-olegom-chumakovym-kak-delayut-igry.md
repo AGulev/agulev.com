@@ -4,7 +4,9 @@ categories:
 - defold
 date: '2021-10-04T21:56:00+03:00'
 locale: ru
+lang: ru
 layout: post
+permalink: /aleksej-gulev-oleg-pridyuk-i-dvigatel-defold-s-olegom-chumakovym-kak-delayut-igry/
 tags:
 - defold
 - podcast

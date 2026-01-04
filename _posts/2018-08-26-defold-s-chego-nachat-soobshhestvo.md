@@ -5,6 +5,7 @@ categories:
 - избранное
 date: '2018-08-26T19:33:20+03:00'
 locale: ru
+lang: ru
 last_update: 2023-08-25
 layout: post
 permalink: /defold-s-chego-nachat-soobshhestvo/

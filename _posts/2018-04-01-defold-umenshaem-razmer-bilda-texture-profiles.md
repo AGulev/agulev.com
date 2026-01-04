@@ -4,8 +4,10 @@ categories:
 - defold
 date: '2018-04-01T19:13:39+03:00'
 locale: ru
+lang: ru
 last_update: 2021-01-02
 layout: post
+permalink: /defold-umenshaem-razmer-bilda-texture-profiles/
 lazyload_thumbnail_quality:
 - default
 tags:
